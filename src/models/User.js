@@ -6,4 +6,6 @@ const UserSchema = new Schema({
   expenses: [{ type: Schema.Types.ObjectId, ref: 'Expense' }]
 });
 
-export default mongoose.model('User', UserSchema);
+const User= mongoose.model('User', UserSchema);
+
+export default User;
